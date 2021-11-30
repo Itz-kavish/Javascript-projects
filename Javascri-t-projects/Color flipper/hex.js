@@ -6,7 +6,7 @@ const color = document.getElementsByClassName("color")[0];
 function generateRandomNum(){
     return Math.floor(Math.random()*hex.length);
 }
-//yoooooo
+
 document.addEventListener('click', function(){
     let hexColor = '#';
     for(i=0;i<6;i++){
