@@ -2,10 +2,10 @@
 const reviews = [
   {
     id: 1,
-    name: "susan smith",
-    job: "web developer",
+    name: "Virat Chokli",
+    job: "Professional cricketer",
     img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    text: "Virat Chokli is a professional cricketer. His name used to be Virat kohli but due to his multiple instances of choking during important matches and winning all the not very important matches, he is also reffered as virat CHOKLI. His team never wins trophies but are great at winning a people's hearts. There trophy cabinet was renamed to the HEART cabinet because of the excessive amount of hearts they won.",
   },
   {
     id: 2,
@@ -41,10 +41,47 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
+//Function for generating random number that equal the length of the array 'reviews'
+function generateRandomNum() {
+  return Math.floor(Math.random() * reviews.length);
+}
+
 //Value for starting item
-let currentItem = 0;
+let currentItem = 1;
+
+//Function for the Previous button that makes the reviews cycle backwards
+prevBtn.addEventListener("click", function () {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(currentItem);
+});
+
+//Function for the Next Button that makes the reviews cycle forward
+nextBtn.addEventListener("click", function () {
+  currentItem++;
+  if (currentItem > 3) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+
+randomBtn.addEventListener("click", function () {
+  currentItem = generateRandomNum();
+  showPerson(currentItem);
+});
 
 //load the first item
 window.addEventListener("DOMContentLoaded", function () {
-  console.log("ooo");
+  showPerson(currentItem);
 });
+
+//Show person based on item
+function showPerson(person) {
+  const item = reviews[person];
+  img.src = item.img;
+  author.innerHTML = item.name;
+  job.innerHTML = item.job;
+  info.innerHTML = item.text;
+}
