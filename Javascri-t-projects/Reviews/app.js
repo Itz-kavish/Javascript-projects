@@ -4,7 +4,7 @@ const reviews = [
     id: 1,
     name: "Virat Chokli",
     job: "Professional cricketer",
-    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+    img: "viratKohli",
     text: "Virat Chokli is a professional cricketer. His name used to be Virat kohli but due to his multiple instances of choking during important matches and winning all the not very important matches, he is also reffered as virat CHOKLI. His team never wins trophies but are great at winning a people's hearts. There trophy cabinet was renamed to the HEART cabinet because of the excessive amount of hearts they won.",
   },
   {
