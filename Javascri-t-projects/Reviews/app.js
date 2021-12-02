@@ -19,7 +19,7 @@ const reviews = [
     name: "peter jones",
     job: "intern",
     img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    text: "Sriracha sauce is a sweet sauce that is very spicy. It is so spicy that I can raise the sugar levels in your blood exponentially. I used to eat few apples a day but I realized that I need to but a new car so I started eating other fruits like lettuce, peas and caramel onions. Caramel onion are caramel apples but onions.",
+    text: "Sriracha sauce is a sweet sauce that is very spicy. It is so spicy that it can raise the sugar levels in your blood exponentially. I used to eat few apples a day but I realized that I need to but a new car so I started eating other fruits like lettuce, peas and caramel onions. Caramel onion are caramel apples but onions.",
   },
   {
     id: 4,
